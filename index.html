@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HangMan Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Armata|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="assets\css\style.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <h1> Trivia Game - Networking </h1>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <p>You will be given 30 seconds to answer a series of questions, if the time runs out the question will be marked wrong. </p>
+            <p>At the end of this you will be shown how many right and wrong answers you have</p>
+          </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container" id="questionbody">
+          <span id="question"></span> <br><br>
+          <div class="radio">
+            <input type="radio" class="answer" name="answerOne"><label id="answerOne"></label>
+          </div>
+          <div class="radio">
+            <input type="radio" class="answer" name="answerTwo"><label id="answerTwo"></label>
+          </div>
+          <div class="radio">
+            <input type="radio" class="answer" name="answerThree"><label id="answerThree"></label>
+          </div>
+          <div class="radio">
+            <input type="radio" class="answer" name="answerFour"><label id="answerFour"></label>
+          </div>
+
+        </div>
+      </div>
+  <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container" id="timercontainer">
+    <h1> Time Left: <span id="timer"></span>
+  </div>
+</div>
